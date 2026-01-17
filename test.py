@@ -21,6 +21,8 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
 
     all_rows = []
 
+    all_rows.append({"yolo":"Zo ouderwets"})
+
     # Return ONLY the array of nice flat rows
     return func.HttpResponse(
         json.dumps(all_rows, ensure_ascii=False),
