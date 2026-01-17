@@ -12,7 +12,6 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Python HTTP trigger function processed a request (Graph → normalized JSON array)")
 
     all_rows = []
-
     all_rows.append({"yolo":"Zo ouderwets"})
 
     # Return ONLY the array of nice flat rows
