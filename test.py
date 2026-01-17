@@ -11,14 +11,6 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Python HTTP trigger function processed a request (Graph → normalized JSON array)")
 
-    # --- Authorization header (Graph) ---
-    auth_header = req.headers.get("Authorization")
-    if not auth_header:
-        return func.HttpResponse(
-            "Missing Authorization header (Bearer token).",
-            status_code=401
-        )
-
     all_rows = []
 
     all_rows.append({"yolo":"Zo ouderwets"})
