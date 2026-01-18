@@ -7,7 +7,7 @@ import urllib.parse
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 
-@app.route(route="http_trigger", methods=["POST"])
+@app.route(route="http_trigger", methods=["GET"])
 def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Python HTTP trigger function processed a request (Graph → normalized JSON array)")
 
