@@ -24,7 +24,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     except ValueError:
         return func.HttpResponse("Invalid or missing JSON body.", status_code=400)
     return func.HttpResponse(
-        json.dumps(all_rows, ensure_ascii=False),
+        json.dumps(body, ensure_ascii=False),
         mimetype="application/json",
         status_code=200
     )
