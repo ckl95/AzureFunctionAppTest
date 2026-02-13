@@ -1,13 +1,6 @@
 azure-functions
-pandas
 azure-identity
 azure-storage-file-datalake
 azure-core
 azure-storage-blob
 requests
-python-dateutil
-urllib3
-idna
-certifi
-six
-typing_extensions
