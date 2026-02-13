@@ -18,6 +18,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     logging.info("Python HTTP trigger function processed a request (Graph → normalized JSON array)")
 
+    foobar = 'a'
 
     try:
         body = req.get_json()
