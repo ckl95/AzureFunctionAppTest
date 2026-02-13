@@ -3,6 +3,13 @@ import logging
 import json
 import urllib.request
 import urllib.parse
+import os
+import re
+from typing import Any, Dict, List
+from collections import defaultdict
+import pandas as pd
+from azure.identity import DefaultAzureCredential
+from azure.storage.filedatalake import DataLakeServiceClient
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
