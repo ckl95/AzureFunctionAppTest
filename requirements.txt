@@ -11,3 +11,4 @@ idna
 certifi
 six
 typing_extensions
+numpy
