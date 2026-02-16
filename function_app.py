@@ -205,6 +205,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
             "preview": combined.head(10).to_dict(orient="records"),
             "errors": errors
         }
+        
     else:
         payload = {
             "subfolder": subfolder,
