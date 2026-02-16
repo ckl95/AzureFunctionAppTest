@@ -106,7 +106,7 @@ def http_trigger(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as ex:
         logging.exception("Failed to create ADLS filesystem client.")
         return func.HttpResponse(f"ADLS client error: {ex}", status_code=500)
-    payload = {"status": "succeed"}
+    payload = [{"status": "succeed"}]
  
     return func.HttpResponse(
         json.dumps(payload, ensure_ascii=False, indent=2),
