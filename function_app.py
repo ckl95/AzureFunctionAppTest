@@ -9,7 +9,6 @@ from collections import defaultdict
 from azure.identity import DefaultAzureCredential
 from azure.storage.filedatalake import DataLakeServiceClient, FileSystemClient
 
-
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
  
  
