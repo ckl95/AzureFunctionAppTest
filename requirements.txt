@@ -1,6 +1,7 @@
 azure-functions
-azure-identity
 azure-storage-file-datalake
-azure-core
+azure-identity-broker
+azure-identity
 azure-storage-blob
 requests
+pandas
